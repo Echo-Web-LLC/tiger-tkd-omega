@@ -3,6 +3,7 @@
 import React from "react";
 import Carousel from "../ui/carousel";
 import { SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 const Testimonials = () => {
   const mockData = [
@@ -109,7 +110,14 @@ const Testimonials = () => {
 
   return (
     <section className="photos-section flex flex-col gap-14 md:m-20 m-4">
-      <h2 className="text-2xl text-center">Testimonials</h2>
+      <Image
+        src="/TKDMAN1.png"
+        alt="kickingMan"
+        className="mb-10 self-center"
+        width={400}
+        height={200}
+      />
+      <h2 className="text-2xl text-center font-medium">Testimonials</h2>
       <div className="flex justify-center">
         <Carousel>
           {mockData.map((review) => (

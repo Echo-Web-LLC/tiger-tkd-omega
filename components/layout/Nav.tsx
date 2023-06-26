@@ -4,7 +4,7 @@ import Button from "../ui/button";
 
 function Nav() {
   return (
-    <div className="bg-white">
+    <div className="bg-white mb-10">
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
@@ -24,15 +24,6 @@ function Nav() {
                 <li>
                   <Link
                     className="font-medium text-gray-900 transition hover:text-gray-700/75"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="font-medium text-gray-900 transition hover:text-gray-700/75"
                     href="/about"
                   >
                     About
@@ -45,6 +36,14 @@ function Nav() {
                     href="/schedule"
                   >
                     Schedule
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-900 transition hover:text-gray-700/75"
+                    href="/pricing"
+                  >
+                    Pricing
                   </Link>
                 </li>
               </ul>

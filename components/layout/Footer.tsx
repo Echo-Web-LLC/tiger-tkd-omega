@@ -1,48 +1,39 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <footer className="mt-10">
+      <div className="mx-auto max-w-screen-2xl p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col md:flex-row md:justify-between">
-          {/* Connect Column */}
           <div className="mb-6 md:mb-0">
-            <div className="flex items-center mb-4">
-              <img
-                className="h-24"
-                src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
-                alt="logo"
-              />
+            <div className="md:flex md:items-center md:gap-12">
+              <Link href="/">
+                <span className="sr-only">Home</span>
+                <img
+                  className="h-24"
+                  src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
+                  alt="logo"
+                />
+              </Link>
             </div>
-            <p className="text-sm">
-              Follow us on social media for the latest updates and news.
-            </p>
-            {/* Social Media Icons */}
-            <div className="flex space-x-4 mt-4">
-              {/* Replace the following social media icons with your own */}
-              <a
-                href="https://www.facebook.com/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-facebook fa-lg"></i>
-              </a>
-              <a
-                href="https://www.twitter.com/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-twitter fa-lg"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/example"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-instagram fa-lg"></i>
-              </a>
-            </div>
+          </div>
+          <div className="mb-6 md:mb-0">
+            <h3 className="text-lg font-semibold mb-4">Connect</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/about" className="hover:text-gray-300">
+                  <Image
+                    src="/facebook-icon.png"
+                    alt="kickingMan"
+                    className="mb-10"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Links Column */}
