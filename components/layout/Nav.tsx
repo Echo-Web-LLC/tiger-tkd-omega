@@ -15,12 +15,12 @@ const Nav = () => {
   return (
     <header className="bg-white shadow mb-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-fit">
           <div className="flex items-center gap-12">
             <Link href="/">
               <span className="sr-only">Home</span>
               <Image
-                src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
+                src="/logo.png"
                 alt="logo"
                 width={90}
                 height={0}

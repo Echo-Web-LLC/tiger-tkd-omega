@@ -11,7 +11,7 @@ const Footer = () => {
             <Link href="/">
               <span className="sr-only">Home</span>
               <Image
-                src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
+                src="/logo.png"
                 alt="logo"
                 width={90}
                 height={0}
