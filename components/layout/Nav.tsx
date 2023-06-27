@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+
+import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import Button from "../ui/button";
 
 const Nav = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav((prev) => !prev);
+  };
+
   return (
     <header className="bg-white shadow mb-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,33 +26,30 @@ const Nav = () => {
             </Link>
           </div>
 
-          <nav className="hidden md:block">
-            <ul className="flex items-center gap-12 text-md">
-              <li>
-                <Link
-                  href="/about"
-                  className="font-medium text-gray-900 hover:text-gray-700/75"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/schedule"
-                  className="font-medium text-gray-900 hover:text-gray-700/75"
-                >
-                  Schedule
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/pricing"
-                  className="font-medium text-gray-900 hover:text-gray-700/75"
-                >
-                  Pricing
-                </Link>
-              </li>
+          <nav
+            className={`fixed bg-black bg-opacity-40 h-screen w-screen top-0 ${
+              showNav ? "left-0" : "left-full"
+            } transition-all md:transition-none m-0 p-0 z-10 md:block md:static md:h-fit md:w-fit md:bg-transparent`}
+          >
+            <ul className="flex flex-col items-center justify-center h-full gap-12 text-md md:flex-row">
+              <NavItem link="/about" onClick={toggleNav}>
+                About
+              </NavItem>
+              <NavItem link="/schedule" onClick={toggleNav}>
+                Schedule
+              </NavItem>
+              <NavItem link="/pricing" onClick={toggleNav}>
+                Pricing
+              </NavItem>
             </ul>
+            <button
+              className={`top-5 right-5 text-white text-4xl ${
+                showNav ? "absolute" : "hidden"
+              }`}
+              onClick={toggleNav}
+            >
+              <i className="fa-solid fa-xmark"></i>
+            </button>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -53,7 +58,10 @@ const Nav = () => {
             </div>
 
             <div className="block md:hidden">
-              <button className="rounded bg-gray-100 p-2 text-gray-600 hover:text-gray-600/75">
+              <button
+                className="rounded bg-gray-100 p-2 text-gray-600 hover:text-gray-600/75"
+                onClick={toggleNav}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -76,5 +84,25 @@ const Nav = () => {
     </header>
   );
 };
+
+const NavItem = ({
+  link,
+  onClick,
+  children,
+}: {
+  link: string;
+  onClick: () => void;
+  children: ReactNode;
+}) => (
+  <li>
+    <Link
+      href={link}
+      className="font-medium md:text-gray-900 hover:text-gray-700/75 text-4xl md:text-base uppercase text-white"
+      onClick={onClick}
+    >
+      {children}
+    </Link>
+  </li>
+);
 
 export default Nav;

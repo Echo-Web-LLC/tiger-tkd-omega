@@ -16,6 +16,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
+        />
+        <script
+          src="https://kit.fontawesome.com/db311df611.js"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>

@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="mt-10">
       <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <div className="flex justify-center md:justify-start">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex">
             <Link href="/">
               <span className="sr-only">Home</span>
               <img
