@@ -50,7 +50,7 @@ const Nav = () => {
               }`}
               onClick={toggleNav}
             >
-              X{/* <i className="fa-solid fa-xmark"></i> */}
+              X<i className="fa-solid fa-xmark"></i>
             </button>
           </nav>
 
@@ -99,7 +99,7 @@ const NavItem = ({
   <li>
     <Link
       href={link}
-      className="font-medium md:text-gray-900 hover:text-gray-700/75 text-4xl md:text-base uppercase text-white"
+      className="font-medium md:text-gray-900 hover:text-gray-700/75 text-4xl md:text-base uppercase md:normal-case text-white"
       onClick={onClick}
     >
       {children}
