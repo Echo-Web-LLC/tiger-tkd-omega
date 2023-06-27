@@ -86,7 +86,6 @@ const Nav = () => {
     </header>
   );
 };
-// TEST
 
 const NavItem = ({
   link,
