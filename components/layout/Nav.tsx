@@ -3,6 +3,7 @@
 import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import Button from "../ui/button";
+import Image from "next/image";
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(false);
@@ -18,10 +19,11 @@ const Nav = () => {
           <div className="flex items-center gap-12">
             <Link href="/">
               <span className="sr-only">Home</span>
-              <img
-                className="h-24"
+              <Image
                 src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
                 alt="logo"
+                width={90}
+                height={0}
               />
             </Link>
           </div>

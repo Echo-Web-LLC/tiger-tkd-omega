@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function InstructorInfo() {
   return (
@@ -6,10 +7,12 @@ function InstructorInfo() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
           <div className="w-full md:w-1/2">
-            <img
+            <Image
               alt="Les Paul"
               src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              className="object-cover w-full h-auto rounded-xl"
+              width={1770}
+              height={1000}
+              className="rounded-xl"
             />
           </div>
           <div className="w-full md:w-1/2">
