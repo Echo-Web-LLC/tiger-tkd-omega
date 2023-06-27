@@ -23,10 +23,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <script
+        {/* <script
           src="https://kit.fontawesome.com/db311df611.js"
           crossOrigin="anonymous"
-        />
+        /> */}
         <Layout>{children}</Layout>
       </body>
     </html>

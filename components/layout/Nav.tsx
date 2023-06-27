@@ -50,7 +50,7 @@ const Nav = () => {
               }`}
               onClick={toggleNav}
             >
-              <i className="fa-solid fa-xmark"></i>
+              {/* <i className="fa-solid fa-xmark"></i> */}
             </button>
           </nav>
 
