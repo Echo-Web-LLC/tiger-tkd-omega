@@ -5,7 +5,7 @@ const Custom404 = () => {
         404 - Page Not Found
       </h1>
       <p className="text-center text-lg mb-8">
-        Oops! The page you're looking for doesn't exist.
+        <p>Could not find requested resource</p>
       </p>
     </div>
   );
