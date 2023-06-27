@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Button from "../ui/button";
 
-function Nav() {
+const Nav = () => {
   return (
-    <div className="bg-white mb-10">
-      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
+    <header className="bg-white shadow mb-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          <div className="flex items-center gap-12">
             <Link href="/">
               <span className="sr-only">Home</span>
               <img
@@ -18,45 +18,42 @@ function Nav() {
             </Link>
           </div>
 
-          <div className="hidden md:block">
-            <nav aria-label="Global">
-              <ul className="flex items-center gap-24 text-md">
-                <li>
-                  <Link
-                    className="font-medium text-gray-900 transition hover:text-gray-700/75"
-                    href="/about"
-                  >
-                    About
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="font-medium text-gray-900 transition hover:text-gray-700/75"
-                    href="/schedule"
-                  >
-                    Schedule
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="font-medium text-gray-900 transition hover:text-gray-700/75"
-                    href="/pricing"
-                  >
-                    Pricing
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav className="hidden md:block">
+            <ul className="flex items-center gap-12 text-md">
+              <li>
+                <Link
+                  href="/about"
+                  className="font-medium text-gray-900 hover:text-gray-700/75"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/schedule"
+                  className="font-medium text-gray-900 hover:text-gray-700/75"
+                >
+                  Schedule
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/pricing"
+                  className="font-medium text-gray-900 hover:text-gray-700/75"
+                >
+                  Pricing
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
           <div className="flex items-center gap-4">
-            <div className="sm:flex sm:gap-4">
-              <Button link={"/contact"}>Contact Us</Button>
+            <div className="flex gap-4">
+              <Button link="/contact">Contact Us</Button>
             </div>
 
             <div className="block md:hidden">
-              <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <button className="rounded bg-gray-100 p-2 text-gray-600 hover:text-gray-600/75">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -76,8 +73,8 @@ function Nav() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
-}
+};
 
 export default Nav;

@@ -11,41 +11,53 @@ const ContactOptions: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 mx-4">
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-10 items-center">
-          <Image src="/contact-email.png" alt="Email" width={75} height={75} />
-          <p className="sm:text-gray-600 text-center">tigerkalen@gmail.com</p>
+    <div className="mx-auto px-4 py-12">
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
+          <div className="flex gap-10 items-center">
+            <Image
+              src="/contact-email.png"
+              alt="Email"
+              width={75}
+              height={75}
+            />
+            <p className="text-gray-600">tigerkalen@gmail.com</p>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-10 items-center">
-          <Image src="/contact-phone.png" alt="Phone" width={75} height={75} />
-          <div className="flex flex-col gap-2">
-            <p className="sm:text-gray-600">Studio - 732-906-9077</p>
-            <p className="sm:text-gray-600">Master Kalen - 732-207-9357</p>
+        <div className="flex flex-col gap-6">
+          <div className="flex gap-10 items-center">
+            <Image
+              src="/contact-phone.png"
+              alt="Phone"
+              width={75}
+              height={75}
+            />
+            <div className="flex flex-col gap-2">
+              <p className="text-gray-600">Studio - 732-906-9077</p>
+              <p className="text-gray-600">Master Kalen - 732-207-9357</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-6">
+          <div className="flex gap-10 items-center">
+            <Image
+              src="/contact-location.png"
+              alt="Location"
+              width={75}
+              height={75}
+            />
+            <button
+              className="text-gray-600 hover:underline text-start"
+              onClick={() =>
+                openMap("52 Lincoln Highway, Suite 2B, Edison, NJ, 08820")
+              }
+            >
+              52 Lincoln Highway, Suite 2B, Edison, NJ, 08820
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-10 items-center">
-          <Image
-            src="/contact-location.png"
-            alt="Location"
-            width={75}
-            height={75}
-          />
-          <button
-            className="sm:text-gray-600 hover:underline text-decoration-dotted text-start"
-            onClick={() =>
-              openMap("52 Lincoln Highway, Suite 2B, Edison, NJ, 08820")
-            }
-          >
-            52 Lincoln Highway, Suite 2B, Edison, NJ, 08820
-          </button>
-        </div>
-      </div>
-      <p className="text-center text-2xl">
+      <p className="text-center text-2xl mt-8">
         We are located across from Starbucks.
       </p>
     </div>

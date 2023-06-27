@@ -4,15 +4,11 @@ import Footer from "./Footer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
-      <main className="flex flex-col justify-between h-screen">
-        <div>
-          <Nav />
-          {children}
-        </div>
-        <Footer />
-      </main>
-    </>
+    <div className="flex flex-col min-h-screen">
+      <Nav />
+      <main className="flex-grow">{children}</main>
+      <Footer />
+    </div>
   );
 };
 

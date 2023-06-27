@@ -5,55 +5,48 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="mt-10">
-      <div className="mx-auto max-w-screen-2xl p-4 sm:p-6 lg:p-8">
-        <div className="flex flex-col md:flex-row md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <div className="md:flex md:items-center md:gap-12">
-              <Link href="/">
-                <span className="sr-only">Home</span>
-                <img
-                  className="h-24"
-                  src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
-                  alt="logo"
-                />
-              </Link>
-            </div>
+      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="flex justify-center md:justify-start">
+            <Link href="/">
+              <span className="sr-only">Home</span>
+              <img
+                className="h-24"
+                src="https://tigers-tkd-omega.s3.amazonaws.com/logo.png"
+                alt="logo"
+              />
+            </Link>
           </div>
-          <div className="mb-6 md:mb-0">
+          <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <ul className="space-y-2">
+            <ul className="flex space-x-4">
               <li>
-                <Link href="/about" className="hover:text-gray-300">
+                <a
+                  href="/facebook-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/facebook-icon.png"
-                    alt="kickingMan"
-                    className="mb-10"
+                    alt="Facebook"
                     width={25}
                     height={25}
                   />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
-
-          {/* Links Column */}
-          <div className="mb-6 md:mb-0">
+          <div>
             <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="hover:text-gray-300">
-                  About Us
-                </Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-gray-300">
-                  Contact
-                </Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
-
-          {/* Contact Column */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-sm">

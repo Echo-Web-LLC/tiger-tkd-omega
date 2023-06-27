@@ -3,13 +3,13 @@ import Button from "../ui/button";
 
 const LandingInfo = () => {
   return (
-    <section className="vh-100 sm:grid xl:grid-cols-2 sm:items-center justify-center">
-      <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-        <div className="vh-50 mx-auto max-w-2xl">
+    <section className="sm:grid xl:grid-cols-2 sm:items-center justify-center">
+      <div className="p-8 md:p-12 lg:px-16 lg:py-24 flex justify-center">
+        <div className="flex flex-col vh-50 mx-auto max-w-2xl">
           <Image
             src="/TKDMAN1.png"
             alt="kickingMan"
-            className="mb-10"
+            className="mb-10 self-center"
             width={400}
             height={200}
           />
@@ -35,7 +35,7 @@ const LandingInfo = () => {
         <Image
           alt=""
           src="/landing-info-image.png"
-          className="bg-gray-400 object-cover mt-16 xl:mt-0 self-end rounded-tl-[150px] rounded-br-[150px] m-auto"
+          className="object-contain w-full h-96 xl:h-full p-4 xl:p-20"
           width={500}
           height={500}
         />

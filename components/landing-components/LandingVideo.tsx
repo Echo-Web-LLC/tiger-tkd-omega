@@ -3,14 +3,14 @@ import React from "react";
 const LandingVideo = () => {
   return (
     <div className="relative w-full">
-      <div className="video-overlay absolute inset-0 flex items-center justify-center">
+      <div className="video-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
         <div className="text-center">
           <h2 className="text-white text-2xl font-bold mb-4 z-10">
             Custom Video Title
           </h2>
         </div>
       </div>
-      <video className="w-full h-auto" controls>
+      <video className="w-full h-auto" controls={false}>
         <source
           src="https://off-the-dock.s3.amazonaws.com/Off+the+Dock+promo+video.mp4"
           type="video/mp4"
