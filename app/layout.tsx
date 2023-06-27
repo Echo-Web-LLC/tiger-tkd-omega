@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +24,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* <script
+        <Script
           src="https://kit.fontawesome.com/db311df611.js"
           crossOrigin="anonymous"
-        /> */}
+        />
         <Layout>{children}</Layout>
       </body>
     </html>
