@@ -127,7 +127,7 @@ const Testimonials = () => {
         {mockData.map((review) => (
           <SwiperSlide key={review.id}>
             <div className="flex justify-center items-center h-full">
-              <div className="bg-[#01519B] text-white p-6 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center md:w-1/2 w-full m-auto h-2/3">
+              <div className="bg-[#01519B] text-white p-10 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center md:w-1/2 w-full m-auto h-2/3">
                 <div className="flex gap-4">
                   <div className="flex items-center mb-4">
                     {renderStars(review.stars)}
