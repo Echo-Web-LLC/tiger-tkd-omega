@@ -108,11 +108,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section
-      className="bg-gray-
-
-200 flex flex-col items-center py-10 px-4 md:p-20 gap-8 text-center"
-    >
+    <section className="flex flex-col items-center py-10 px-4 md:p-20 gap-8 text-center">
       <div className="max-w-md">
         <Image
           src="/TKDMAN1.png"
@@ -125,9 +121,9 @@ const Testimonials = () => {
       </div>
       <Carousel>
         {mockData.map((review) => (
-          <SwiperSlide key={review.id}>
-            <div className="flex justify-center items-center h-full">
-              <div className="bg-[#01519B] text-white p-10 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center md:w-1/2 w-full m-auto h-2/3">
+          <SwiperSlide key={review.id} className="relative">
+            <div className="flex justify-center items-center mx-auto h-96">
+              <div className="bg-[#01519B] text-white p-10 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center w-full m-auto h-2/3">
                 <div className="flex gap-4">
                   <div className="flex items-center mb-4">
                     {renderStars(review.stars)}
