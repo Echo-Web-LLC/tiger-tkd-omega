@@ -32,9 +32,9 @@ const Nav = () => {
           </div>
 
           <nav
-            className={`fixed bg-black bg-opacity-40 h-screen w-screen top-0 ${
+            className={`fixed bg-black bg-opacity-80 h-screen w-screen top-0 ${
               showNav ? "left-0" : "left-full"
-            } transition-all md:transition-none m-0 p-0 z-10 md:block md:static md:h-fit md:w-fit md:bg-transparent`}
+            } transition-all md:transition-none m-0 p-0 z-20 md:block md:static md:h-fit md:w-fit md:bg-transparent`}
           >
             <ul className="flex flex-col items-center justify-center h-full gap-12 text-md md:flex-row">
               <NavItem link="/about" onClick={toggleNav}>
@@ -59,7 +59,9 @@ const Nav = () => {
 
           <div className="flex items-center gap-4">
             <div className="flex gap-4">
-              <Button link="/contact">Contact Us</Button>
+              <Button link="/contact" customStyles="border-black">
+                Contact Us
+              </Button>
             </div>
 
             <div className="block md:hidden">

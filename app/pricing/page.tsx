@@ -74,7 +74,9 @@ const Pricing = () => {
         </div>
       </div>
 
-      <Button link="/contact">Contact Us To Get Started</Button>
+      <Button link="/contact" customStyles="border-black text-black">
+        Contact Us To Get Started
+      </Button>
     </section>
   );
 };

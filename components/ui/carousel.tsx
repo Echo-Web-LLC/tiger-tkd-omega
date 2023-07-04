@@ -13,7 +13,7 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full relative">
+    <div className="container mx-auto md:w-2/3 w-full relative">
       <Swiper
         loop={true}
         spaceBetween={10}
@@ -25,7 +25,7 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
           clickable: true,
         }}
         slidesPerView={1}
-        className="relative"
+        className="relative md:w-9/12 w-full"
         style={
           {
             "--swiper-pagination-color": "#000080",

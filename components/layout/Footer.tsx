@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="mt-10">
-      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <footer className="container mt-10 mx-auto">
+      <div className="py-6 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex">
             <Link href="/">
