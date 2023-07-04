@@ -18,7 +18,7 @@ const PhotoGallery = () => {
       <h2 className="text-center text-2xl font-medium py-12">Photo Gallery</h2>
       <Carousel>
         {photos.map((photo) => (
-          <SwiperSlide>
+          <SwiperSlide key={photo}>
             <div className="h-96">
               <Image src={photo} fill alt="Photo Gallery One" />
             </div>
