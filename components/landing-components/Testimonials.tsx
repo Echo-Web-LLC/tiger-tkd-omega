@@ -3,6 +3,7 @@ import React from "react";
 import Carousel from "../ui/carousel";
 import { SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import Button from "../ui/button";
 
 const Testimonials = () => {
   const mockData = [
@@ -11,7 +12,8 @@ const Testimonials = () => {
       stars: 5,
       date: new Date(2022, 2, 2),
       author: "Person Person",
-      review: "It was cool, yes it was so cool",
+      review:
+        "It was cool, yes it was so cool. It was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so cool.It was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so cool",
     },
     {
       id: 2,
@@ -108,12 +110,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section
-      className="bg-gray-
-
-200 flex flex-col items-center py-10 px-4 md:p-20 gap-8 text-center"
-    >
-      <div className="max-w-md">
+    <section className="container mx-auto flex-col flex gap-4 items-center md:p-12 p-8 lg:px-16 lg:py-24">
+      <div className="max-w-md mx-auto mb-6">
         <Image
           src="/TKDMAN1.png"
           alt="kickingMan"
@@ -121,28 +119,31 @@ const Testimonials = () => {
           width={400}
           height={200}
         />
-        <h2 className="text-2xl font-medium">Testimonials</h2>
+        <h2 className="text-2xl font-medium text-center">Testimonials</h2>
       </div>
       <Carousel>
         {mockData.map((review) => (
-          <SwiperSlide key={review.id}>
-            <div className="flex justify-center items-center h-full">
-              <div className="bg-[#01519B] text-white p-10 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center md:w-1/2 w-full m-auto h-2/3">
-                <div className="flex gap-4">
-                  <div className="flex items-center mb-4">
+          <SwiperSlide key={review.id} className="flex justify-center">
+            <div className="flex justify-center items-center mx-auto h-96 w-full">
+              <div className="border border-black md:p-10 p-8 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center w-full m-auto h-2/3">
+                <div className="flex md:flex-row flex-col md:gap-4">
+                  <div className="flex items-center">
                     {renderStars(review.stars)}
                   </div>
-                  <div className="mb-4">{formatReviewDate(review.date)}</div>
+                  <div>{formatReviewDate(review.date)}</div>
                 </div>
-                <div className="text-center">
-                  <p className="text-xl">{review.review}</p>
-                  <div className="text-xl">-{review.author}</div>
+                <div className="text-center text-lg overflow-auto flex flex-col gap-4">
+                  <p>{review.review}</p>
+                  <div>-{review.author}</div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Carousel>
+      <Button link="Hi" customStyles="border-black">
+        Read More Reviews From Google Reviews
+      </Button>
     </section>
   );
 };
