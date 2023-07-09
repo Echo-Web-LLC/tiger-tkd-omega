@@ -5,7 +5,9 @@ import Gallery from "@/components/schedule-components/Gallery";
 const Schedule = () => {
   return (
     <section className="flex flex-col items-center gap-20">
-      <Image src="/schedule.png" alt="Schedule" width={1200} height={0} />
+      <div className="px-4 md:px-6">
+        <Image src="/schedule.png" alt="Schedule" width={1200} height={0} />
+      </div>
       <Image
         src="/TKDMAN1.png"
         alt="kickingMan"
