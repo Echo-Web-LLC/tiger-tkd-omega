@@ -4,7 +4,9 @@ const BackgroundInfo = () => {
   return (
     <section className="container mx-auto">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24 flex flex-col gap-8 justify-center text-center">
-        <h2 className="text-4xl font-semibold">A Piece of History</h2>
+        <h2 className="text-3xl font-medium text-gray-900 md:text-4xl w-full text-center">
+          A Piece of History
+        </h2>
         <div className="flex flex-col gap-4">
           <p>
             This school was founded by a very special Teacher. Grandmaster Seok
