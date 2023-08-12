@@ -10,24 +10,24 @@ const Testimonials = () => {
     {
       id: 1,
       stars: 5,
-      date: new Date(2022, 2, 2),
-      author: "Person Person",
+      date: new Date(2023, 5, 1),
+      author: "Jaya I.",
       review:
-        "It was cool, yes it was so cool. It was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so cool.It was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so coolIt was cool, yes it was so cool",
+        "My son Likes Tae kwon-Do classes here verymuch. Master kaylon is very good at teaching. He is very passionate about teaching and kids enjoy  learning with him. He teaches all techniques very well at the same time kids will have fun.",
     },
     {
       id: 2,
       stars: 3,
-      date: new Date(2023, 1, 3),
-      author: "Person Person",
-      review: "It was cool, yes it was so cool",
+      date: new Date(2022, 1, 1),
+      author: "Gayathri S.",
+      review: "Our kids have so much fun learning here!! Flexible time and lots to do within 45 mins! Thank you!"
     },
     {
       id: 3,
       stars: 4,
-      date: new Date(),
-      author: "Person Person",
-      review: "It was cool, yes it was so cool",
+      date: new Date(2021, 1, 1),
+      author: "Hassan R. N.",
+      review: "Its family owned business and everyone there are skilled and professionally. My son has been going there for few years and he loves this place and recommending his friends to join.",
     },
   ];
 
@@ -125,7 +125,7 @@ const Testimonials = () => {
         {mockData.map((review) => (
           <SwiperSlide key={review.id} className="flex justify-center">
             <div className="flex justify-center items-center mx-auto h-96 w-full">
-              <div className="border border-black md:p-10 p-8 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center w-full m-auto h-2/3">
+              <div className="border border-black md:p-10 p-8 rounded-3xl gap-8 rounded-br-[75px] flex flex-col items-center w-full m-auto h-5/6">
                 <div className="flex md:flex-row flex-col md:gap-4">
                   <div className="flex items-center">
                     {renderStars(review.stars)}
@@ -133,7 +133,7 @@ const Testimonials = () => {
                   <div>{formatReviewDate(review.date)}</div>
                 </div>
                 <div className="text-center text-lg overflow-auto flex flex-col gap-4">
-                  <p>{review.review}</p>
+                  <p className="line-clamp-4 md:line-clamp-none">{review.review}</p>
                   <div>-{review.author}</div>
                 </div>
               </div>

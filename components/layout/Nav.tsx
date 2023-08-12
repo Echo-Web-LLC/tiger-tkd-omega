@@ -15,7 +15,7 @@ const Nav = () => {
   // TESt
 
   return (
-    <header className="bg-white shadow mb-10">
+    <header className="bg-white shadow">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-fit">
           <div className="flex items-center gap-12">
@@ -32,9 +32,8 @@ const Nav = () => {
           </div>
 
           <nav
-            className={`fixed bg-black bg-opacity-80 h-screen w-screen top-0 ${
-              showNav ? "left-0" : "left-full"
-            } transition-all md:transition-none m-0 p-0 z-20 md:block md:static md:h-fit md:w-fit md:bg-transparent`}
+            className={`fixed bg-black bg-opacity-80 h-screen w-screen top-0 ${showNav ? "left-0" : "left-full"
+              } transition-all md:transition-none m-0 p-0 z-20 md:block md:static md:h-fit md:w-fit md:bg-transparent`}
           >
             <ul className="flex flex-col items-center justify-center h-full gap-12 text-md md:flex-row">
               <NavItem link="/about" onClick={toggleNav}>
@@ -48,9 +47,8 @@ const Nav = () => {
               </NavItem>
             </ul>
             <button
-              className={`top-5 right-5 text-white text-4xl ${
-                showNav ? "absolute" : "hidden"
-              }`}
+              className={`top-5 right-5 text-white text-4xl ${showNav ? "absolute" : "hidden"
+                }`}
               onClick={toggleNav}
             >
               <i className="fa-solid fa-xmark"></i>

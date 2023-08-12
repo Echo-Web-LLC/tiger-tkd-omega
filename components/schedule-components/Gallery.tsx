@@ -1,7 +1,7 @@
 import React from "react";
 
 const Gallery = () => {
-  const galleryItems = Array.from({ length: 6 }, (_, index) => ({
+  const galleryItems = Array.from({ length: 0 }, (_, index) => ({
     id: index + 1,
     color: "bg-slate-400",
     width: "w-96",

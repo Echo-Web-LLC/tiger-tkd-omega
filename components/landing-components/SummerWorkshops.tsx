@@ -24,7 +24,7 @@ const SummerWorkshops = () => {
         </div>
         <h2 className="font-semibold text-4xl">SUMMER WORKSHOPS</h2>
         <Button link="/contact" customStyles="border-white text-white">
-          Learn More
+          Contact Us
         </Button>
       </div>
     </section>

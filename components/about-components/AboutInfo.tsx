@@ -5,7 +5,7 @@ const AboutInfo = () => {
     <section className="container mx-auto sm:grid xl:grid-cols-2 sm:items-center justify-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24 flex justify-center">
         <div className="flex flex-col vh-50 mx-auto max-w-2xl">
-          <h1 className="text-3xl font-medium text-gray-900 md:text-5xl w-full text-center">
+          <h1 className="text-3xl font-medium text-gray-900 md:text-5xl w-full text-left">
             Welcome to Tiger’s Taekwondo Omega!
           </h1>
           <p className="mt-8 text-gray-700">
@@ -34,10 +34,10 @@ const AboutInfo = () => {
       <div className="w-full">
         <Image
           alt=""
-          src="/about-info-image.png"
+          src="/master.png"
           className="object-contain w-full h-96 xl:block xl:h-full p-4 xl:p-20 hidden"
-          width={500}
-          height={500}
+          width={9000}
+          height={9000}
         />
       </div>
     </section>
