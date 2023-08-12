@@ -14,10 +14,10 @@ const LandingInfo = () => {
             height={200}
           />
           <h1 className="text-3xl font-medium text-gray-900 md:text-5xl w-full">
-            Welcome to Tiger’s Taekwondo Omega!
+            Welcome to Tiger&quot;s Taekwondo Omega!
           </h1>
           <p className="mt-8 text-gray-700">
-            At Tiger’s Tae Kwon-Do, we teach our students how to be their best
+            At Tiger&quot;s Tae Kwon-Do, we teach our students how to be their best
             self through the practice of this sport.
           </p>
 
