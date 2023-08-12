@@ -21,7 +21,9 @@ const ContactOptions: React.FC = () => {
               width={75}
               height={75}
             />
-            <p className="text-gray-600">tigerkalen@gmail.com</p>
+            <a href="mailto:tigerkalen@gmail.com"
+              target="_blank"
+              className="text-gray-600 hover:underline">tigerkalen@gmail.com</a>
           </div>
         </div>
         <div className="flex flex-col gap-6">
@@ -33,8 +35,8 @@ const ContactOptions: React.FC = () => {
               height={75}
             />
             <div className="flex flex-col gap-2">
-              <p className="text-gray-600">Studio - 732-906-9077</p>
-              <p className="text-gray-600">Master Kalen - 732-207-9357</p>
+              <a href="tel:+917329069077" className="text-gray-600 hover:underline">Studio - 732-906-9077</a>
+              <a href="tel:+917322079357" className="text-gray-600 hover:underline">Master Kalen - 732-207-9357</a>
             </div>
           </div>
         </div>
@@ -57,7 +59,7 @@ const ContactOptions: React.FC = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-2xl mt-8">
+      <p className="text-2xl mt-8">
         We are located across from Starbucks.
       </p>
     </div>

@@ -6,20 +6,25 @@ import Image from "next/image";
 
 const PhotoGallery = () => {
   const photos = [
-    "/photo-gallery-1.png",
-    "/photo-gallery-2.png",
-    "/photo-gallery-3.png",
-    "/photo-gallery-4.png",
-    "/photo-gallery-5.png",
-    "/photo-gallery-6.png",
+    "/IMG_0867.png",
+    "/IMG_0938.png",
+    "/IMG_0874.png",
+    "/IMG_0885.png",
+    "/IMG_0852.png",
+    "/c1.png",
+    "/c2.png",
+    "/c3.png",
+    "/c4.png",
+    "/c5.png",
+    "/c6.png",
   ];
   return (
     <section className="container mx-auto">
-      <h2 className="text-center text-2xl font-medium py-12">Photo Gallery</h2>
+      <h2 className="text-center text-4xl font-medium py-12">Photo Gallery</h2>
       <Carousel>
         {photos.map((photo) => (
           <SwiperSlide key={photo}>
-            <div className="h-96">
+            <div className="vh-25">
               <Image src={photo} fill alt="Photo Gallery One" />
             </div>
           </SwiperSlide>

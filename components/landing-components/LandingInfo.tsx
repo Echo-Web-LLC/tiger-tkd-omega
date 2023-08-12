@@ -9,11 +9,11 @@ const LandingInfo = () => {
           <Image
             src="/TKDMAN1.png"
             alt="kickingMan"
-            className="mb-10 self-center"
+            className="mb-10 ml-2"
             width={400}
             height={200}
           />
-          <h1 className="text-3xl font-medium text-gray-900 md:text-5xl w-full text-center">
+          <h1 className="text-3xl font-medium text-gray-900 md:text-5xl w-full">
             Welcome to Tiger’s Taekwondo Omega!
           </h1>
           <p className="mt-8 text-gray-700">
@@ -26,7 +26,7 @@ const LandingInfo = () => {
             from multiple martial arts for self-defense.
           </p>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-start">
             <Button link="/contact" customStyles="border-black text-black">
               Contact Us
             </Button>
@@ -36,7 +36,7 @@ const LandingInfo = () => {
       <div className="w-full">
         <Image
           alt=""
-          src="/landing-info-image.png"
+          src="/ANMP1823.png"
           className="object-contain w-full p-4 xl:p-20"
           width={500}
           height={500}

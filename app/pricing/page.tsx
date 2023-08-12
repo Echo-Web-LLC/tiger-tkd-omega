@@ -10,15 +10,15 @@ const Pricing = () => {
       </div>
 
       <div className="text-center">
-        <h2 className="text-xl font-semibold mb-4">Our Payment Structure</h2>
-        <div className="flex justify-center gap-8 text-lg">
+        <h2 className="text-4xl font-semibold mb-4">Our Payment Structure</h2>
+        <div className="flex justify-center gap-8 text-2xl font-semibold">
           <span>$165 / Month</span>
           <span>No contracts</span>
         </div>
       </div>
 
-      <div className="text-xl">
-        <p className="text-lg mb-6">
+      <div className="text-xl text-left">
+        <p className="text-2xl mb-6 font-semibold">
           The first <span className="underline">Class</span> with us is Free of
           Charge, the First <span className="underline">Month</span> is $50,
           uniform included.
