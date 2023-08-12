@@ -10,17 +10,17 @@ const BackgroundInfo = () => {
         <div className="flex flex-col gap-4">
           <p>
             This school was founded by a very special Teacher. Grandmaster Seok
-            Joo "Tiger" Cheong was born in Korea and raised in the finest
+            Joo &ldquo;Tiger&ldquo; Cheong was born in Korea and raised in the finest
             institutions to learn the Martial Art of Taekwondo, widely regarded
-            as Korea's gift to the world. Grandmaster Tiger came to the states
-            back in the late 80's to start a school to allow anyone and everyone
+            as Korea&quot;s gift to the world. Grandmaster Tiger came to the states
+            back in the late 80&quot;s to start a school to allow anyone and everyone
             to come in and better themselves. He had discovered his talent for
             teaching after offering instruction in self defense to his workers
-            when he was a construction foreman in Kuwait back in the 70's. Some
+            when he was a construction foreman in Kuwait back in the 70&quot;s. Some
             Taekwondo historians argue that Grandmaster Tiger is the one
             responsible for bringing Taekwondo to the Middle East! What started
             as a way to protect the people in his charge would later reveal
-            itself to be his place in this world. In 1990, this school's doors
+            itself to be his place in this world. In 1990, this school&quot;s doors
             opened for the first time and have remained open to everyone ever
             since.
           </p>
@@ -46,7 +46,7 @@ const BackgroundInfo = () => {
             As disciples of Grandmaster Tiger, we will be here to guide every
             one of our students to see the big picture; to help them see what is
             good for them and everyone around them in the present moment and for
-            what is to come. Helping find one's place in the world is crucial at
+            what is to come. Helping find one&quot;s place in the world is crucial at
             any age. For youngsters, this helps to get them ready to seek out
             who they are and what they want to be, giving them a jump-start on
             their adult life; whenever maturity may reach them, they will be
